@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.flex-column {
+  @apply flex flex-col items-center justify-center;
+}
+.flex-rows {
+  @apply flex flex-row items-center justify-center;
+}
+.flex-betw {
+  @apply flex items-center justify-between;
+}
+.transitions{
+  @apply transition duration-300 ease-in
+}
+.hovers{
+  @apply hidden
+}
+.hovered:hover .hovers{
+  @apply flex-column
+}
+.lenear_bg{
+  background: linear-gradient(269.82deg, #07091c00 .17%, #080a1ad6 99.87%);
+}
