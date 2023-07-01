@@ -29,3 +29,18 @@ export const Select = ({ label, options, onChange }) => {
     </div>
   );
 };
+export const Input = ({ label, placeholder, type, bg }) => {
+  return (
+    <div className="w-full">
+      <label className="text-border font-semibold block">{label}</label>
+      <input
+        required
+        type={type}
+        placeholder={placeholder}
+        className={`w-full mt-2 p-4 text-sm text-white rounded border border-border ${
+          bg ? "bg-main" : "bg-dry"
+        }`}
+      />
+    </div>
+  );
+};
