@@ -1,4 +1,8 @@
-import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
+import { BsFillGridFill } from "react-icons/bs";
+import { FaHeart, FaListAlt, FaRegListAlt, FaUsers } from "react-icons/fa";
+import { RiLockPasswordLine, RiMovie2Fill } from "react-icons/ri";
+import { HiViewGridAdd } from "react-icons/hi";
+import { FiMail, FiMapPin, FiPhoneCall, FiSettings } from "react-icons/fi";
 
 export const CategoriesData = [
   { id: 1, title: "Romantic" },
@@ -56,7 +60,7 @@ export const MovieData = [
     video: "video-1.mp4",
     language: "English",
     year: "2022",
-    time: "3 4hr",
+    time: "3 hr",
     video: "",
     rate: 2.4,
     reviews: 23,
@@ -162,12 +166,55 @@ export const MovieData = [
 ];
 
 export const UsersData = [
-  { Fullname: "Tom Cruise", image: "1.jpg", message:"The majority have suffered alteration",rate: 1.3 },
-  { Fullname: "John Doe", image: "2.jpg", message:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus velit, minus labore laboriosam recusandae autem ",rate: 1.5  },
-  { Fullname: "Minah Lee", image: "3.jpg", message:"The majority have suffered alteration",rate: 4 },
-  { Fullname: "John Snow", image: "4.jpg", message:"The majority have suffered alteration",rate: 3.3 },
-  { Fullname: "Chloe Brayan", image: "5.jpg", message:"The majority have suffered alteration",rate: 5 },
-  { Fullname: "Beyonce", image: "6.jpg", message:"The majority have suffered alteration",rate: 3 },
+  {
+    Fullname: "Tom Cruise",
+    email: "tomcruise@gmail.com",
+    image: "1.jpg",
+    category: "Romance",
+    message: "The majority have suffered alteration",
+    rate: 1.3,
+  },
+  {
+    Fullname: "John Doe",
+    image: "2.jpg",
+    email: "tomcruise@gmail.com",
+    category: "Action",
+    message:
+      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus velit, minus labore laboriosam recusandae autem ",
+    rate: 1.5,
+  },
+  {
+    Fullname: "Minah Lee",
+    image: "3.jpg",
+    email: "tomcruise@gmail.com",
+    category: "Horror",
+    message: "The majority have suffered alteration",
+    rate: 4,
+  },
+  {
+    Fullname: "John Snow",
+    image: "4.jpg",
+    category: "Comedy",
+    email: "tomcruise@gmail.com",
+    message: "The majority have suffered alteration",
+    rate: 3.3,
+  },
+  {
+    Fullname: "Chloe Brayan",
+    image: "5.jpg",
+    email: "tomcruise@gmail.com",
+    category: "Thriller",
+    message: "The majority have suffered alteration",
+    rate: 5,
+  },
+  {
+    Fullname: "Beyonce",
+    image: "6.jpg",
+    category: "Drama",
+    email: "tomcruise@gmail.com",
+    message: "The majority have suffered alteration",
+    rate: 3,
+  },
 ];
 
 export const ContactData = [
@@ -217,4 +264,26 @@ export const RatesData = [
   { title: "3 Stars" },
   { title: "4 Stars" },
   { title: "5 Stars" },
+];
+
+export const SideLinks = [
+  { name: "Dashboard", link: "/dashboard", icon: BsFillGridFill },
+  { name: "Movies List", link: "/movieslist", icon: FaListAlt },
+  { name: "Add Movie", link: "/addmovie", icon: RiMovie2Fill },
+  { name: "Categories", link: "/categories", icon: HiViewGridAdd },
+  { name: "Users", link: "/users", icon: FaUsers },
+  { name: "Update Profile", link: "/profile", icon: FiSettings },
+  { name: "Favorites Movies", link: "/favorites", icon: FaHeart },
+  { name: "Change Password", link: "/password", icon: RiLockPasswordLine },
+];
+
+export const DashboardData = [
+  { bg: "bg-orange-600", icon: FaRegListAlt, title: "Total Movies", total: 50 },
+  {
+    bg: "bg-green-600",
+    icon: HiViewGridAdd,
+    title: "Total Categories",
+    total: 40,
+  },
+  { bg: "bg-green-600", icon: FaUsers, title: "Total Users", total: 100 },
 ];

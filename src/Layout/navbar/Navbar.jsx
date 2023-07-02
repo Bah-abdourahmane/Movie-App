@@ -6,7 +6,7 @@ const Navbar = () => {
   const Hover = ({ isActive }) =>
     isActive ? "text-subMain" : "hover:text-subMain transitions text-white";
   return (
-    <div className="bg-main shadow-md sticky top-0 z-50">
+    <div className="sticky bg-main shadow-md  top-0 z-50">
       <div className="container  mx-auto py-6 px-5 lg:grid gap-10 grid-cols-7 justify-between items-center">
         {/* logo */}
         <div className="hidden col-span-1 lg:block skew-x-12 text-subMain font-bold">

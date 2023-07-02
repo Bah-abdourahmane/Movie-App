@@ -9,11 +9,19 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import WatchPage from './pages/WatchPage';
 import SingleMovie from './pages/SingleMovie';
+import Profile from './pages/Dashboard/Profile';
+import Aos from 'aos';
+import Password from './pages/Dashboard/Password';
+import FavoritesMovies from './pages/Dashboard/FavoritesMovies';
+import MovieList from './pages/Dashboard/Admin/MovieList';
+import Dashboard from './pages/Dashboard/Admin/Dashboard';
+import Categories from './pages/Dashboard/Admin/Categories';
 
 const App = () => {
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
+  Aos.init()
   return (
    <div>
     <Routes>
@@ -25,6 +33,12 @@ const App = () => {
       <Route path='/watch/:id' element={<WatchPage/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/register' element={<Register/>} />
+      <Route path='/profile' element={<Profile/>} />
+      <Route path='/password' element={<Password/>} />
+      <Route path='/favorites' element={<FavoritesMovies/>} />
+      <Route path='/movieslist' element={<MovieList/>} />
+      <Route path='/dashboard' element={<Dashboard/>} />
+      <Route path='/categories' element={<Categories/>} />
       <Route path='*' element={<NotFound/>} />
     </Routes>
    </div>
